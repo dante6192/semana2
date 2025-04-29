@@ -5,11 +5,12 @@
         public App()
         {
             InitializeComponent();
+            
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
+       protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new views.vPrincipal());
+           return new Window(new NavigationPage(new views.login()));
         }
     }
 }
